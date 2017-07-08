@@ -15,6 +15,6 @@ var Question = function(question, answerA, answerB, answerC, correct){
 			console.log("Wrong option.Try again");
 		}
 	};
-}
+};
 
 module.exports = Question;
