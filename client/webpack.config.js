@@ -1,3 +1,5 @@
+var path = require('path');
+
 config = {
   entry: "../app.js",
   output: {
@@ -7,4 +9,10 @@ config = {
   devtool: 'source-map' 
 };
 
-module.exports = config;
+module.exports = {
+  entry: './src/app.js',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'build')
+  }
+};
